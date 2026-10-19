@@ -1,0 +1,405 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.593297,
+          47.566026
+        ]
+      },
+      "properties": {
+        "name": "Arabella Miller Knitwear Studio",
+        "url": "https://textilerhizome.ch/2_index/45_x",
+        "address": "Arabella Miller Knitwear Studio",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.780721,
+          47.226187
+        ]
+      },
+      "properties": {
+        "name": "Création Baumann AG",
+        "url": "https://textilerhizome.ch/2_index/46_x",
+        "address": "Création Baumann AG",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.553122,
+          47.554637
+        ]
+      },
+      "properties": {
+        "name": "Eva Brunner",
+        "url": "https://textilerhizome.ch/2_index/47_x",
+        "address": "Basel",
+        "approximate": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.490009,
+          47.381808
+        ]
+      },
+      "properties": {
+        "name": "F+F Studiengang Modedesign HF",
+        "url": "https://textilerhizome.ch/2_index/48_x",
+        "address": "F+F Schule für Kunst und Design",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.588708,
+          47.573932
+        ]
+      },
+      "properties": {
+        "name": "fair fashion factory",
+        "url": "https://textilerhizome.ch/2_index/49_x",
+        "address": "Fair Fashion Factory",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.553122,
+          47.554637
+        ]
+      },
+      "properties": {
+        "name": "Fibershed DACH",
+        "url": "https://textilerhizome.ch/2_index/50_x",
+        "address": "Basel",
+        "approximate": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.312364,
+          46.954681
+        ]
+      },
+      "properties": {
+        "name": "Fiona Carnuccio - FIOSK",
+        "url": "https://textilerhizome.ch/2_index/52_x",
+        "address": "Bern",
+        "approximate": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.448004,
+          46.948861
+        ]
+      },
+      "properties": {
+        "name": "Florencia Castillo – 9v9",
+        "url": "https://textilerhizome.ch/2_index/53_x",
+        "address": "9v9 Knitting Atelier and Shop",
+        "approximate": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.474091,
+          47.393905
+        ]
+      },
+      "properties": {
+        "name": "Franziska Luethy",
+        "url": "https://textilerhizome.ch/2_index/54_x",
+        "address": "Hermetschloostrasse 77, 8048 Zürich",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.445643,
+          46.960431
+        ]
+      },
+      "properties": {
+        "name": "Simone Kuhn – fraukuhn",
+        "url": "https://textilerhizome.ch/2_index/55_x",
+        "address": "fraukuhn",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.605378,
+          47.4933
+        ]
+      },
+      "properties": {
+        "name": "Handweberei in der Schappe",
+        "url": "https://textilerhizome.ch/2_index/56_x",
+        "address": "Handweberei in der Schappe",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.249481,
+          47.492558
+        ]
+      },
+      "properties": {
+        "name": "Urs Landis Strickwaren",
+        "url": "https://textilerhizome.ch/2_index/57_x",
+        "address": "Urs Landis Strickwaren",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.275027,
+          47.071602
+        ]
+      },
+      "properties": {
+        "name": "HSLU DFK BA Textildesign",
+        "url": "https://textilerhizome.ch/2_index/58_x",
+        "address": "Hochschule Luzern – Design Film Kunst",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.589316,
+          47.573534
+        ]
+      },
+      "properties": {
+        "name": "Institut für Textiles Forschen",
+        "url": "https://textilerhizome.ch/2_index/59_x",
+        "address": "Institut für Textiles Forschen IfTF",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.152789,
+          47.04088
+        ]
+      },
+      "properties": {
+        "name": "Isabelle Mauchle",
+        "url": "https://textilerhizome.ch/2_index/60_x",
+        "address": "Luzern",
+        "approximate": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.442659,
+          46.947643
+        ]
+      },
+      "properties": {
+        "name": "Kaiserhaus OF GOODS",
+        "url": "https://textilerhizome.ch/2_index/61_x",
+        "address": "Kaiserhaus OF GOODS",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.549332,
+          47.369042
+        ]
+      },
+      "properties": {
+        "name": "Leena Pinomaa",
+        "url": "https://textilerhizome.ch/2_index/64_x",
+        "address": "Leena Pinomaa",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.576359,
+          47.570402
+        ]
+      },
+      "properties": {
+        "name": "Loom – Raum für Gewebe und textile Auseinandersetzung",
+        "url": "https://textilerhizome.ch/2_index/65_x",
+        "address": "Gasstrasse 20/Hinterhaus 4056, 4056, 4056 Basel",
+        "approximate": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.581818,
+          47.563773
+        ]
+      },
+      "properties": {
+        "name": "MATRIX Basel",
+        "url": "https://textilerhizome.ch/2_index/66_x",
+        "address": "MATRIX Shop",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.446099,
+          46.9589
+        ]
+      },
+      "properties": {
+        "name": "Rework AG",
+        "url": "https://textilerhizome.ch/2_index/67_x",
+        "address": "Rework AG",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.275037,
+          47.071602
+        ]
+      },
+      "properties": {
+        "name": "SpinnLab – Nachhaltigkeit, Natur- und Recyclingfasern",
+        "url": "https://textilerhizome.ch/2_index/68_x",
+        "address": "Hochschule Luzern – Design Film Kunst",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.826138,
+          47.112095
+        ]
+      },
+      "properties": {
+        "name": "Spycher-Handwerk AG",
+        "url": "https://textilerhizome.ch/2_index/69_x",
+        "address": "Spycher Handwerk AG",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.070927,
+          47.378119
+        ]
+      },
+      "properties": {
+        "name": "Textilosaurus",
+        "url": "https://textilerhizome.ch/2_index/71_x",
+        "address": "Textilosaurus",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.579785,
+          47.080592
+        ]
+      },
+      "properties": {
+        "name": "Zürcher Stalder AG",
+        "url": "https://textilerhizome.ch/2_index/72_x",
+        "address": "Zürcher Stalder AG",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.555426,
+          47.354741
+        ]
+      },
+      "properties": {
+        "name": "Swiss Textile Collection",
+        "url": "https://textilerhizome.ch/2_index/73_x",
+        "address": "Swiss Textile Collection",
+        "approximate": false
+      }
+    }
+  ]
+}

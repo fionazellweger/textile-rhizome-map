@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Toner (Protomaps)</title>
+  <link href="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.css" rel="stylesheet" />
+  <script src="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.js"></script>
+  <style>html, body, #map { margin: 0; height: 100%; }</style>
+</head>
+<body>
+  <div id="map"></div>
+  <script>
+    Promise.all([
+      fetch("style.json").then((r) => r.json()),
+      fetch("data/locations.geojson").then((r) => r.json())
+    ])
+      .then(([style, locations]) => {
+        // MapLibre needs an absolute sprite URL
+        style.sprite = new URL(style.sprite, location.href).href;
+        const bounds = new maplibregl.LngLatBounds();
+        locations.features.forEach((f) => bounds.extend(f.geometry.coordinates));
+        const map = new maplibregl.Map({
+          container: "map",
+          style,
+          bounds,
+          fitBoundsOptions: { padding: 60, maxZoom: 14 }
+        });
+
+        map.on("load", () => {
+          map.addSource("locations", { type: "geojson", data: locations });
+          map.addLayer({
+            id: "locations",
+            type: "circle",
+            source: "locations",
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 8, 5, 16, 9],
+              "circle-color": "#000",
+              "circle-stroke-color": "#fff",
+              "circle-stroke-width": 2
+            }
+          });
+
+          const popup = new maplibregl.Popup({
+            closeButton: false,
+            closeOnClick: false,
+            offset: 12
+          });
+
+          map.on("mouseenter", "locations", (e) => {
+            map.getCanvas().style.cursor = "pointer";
+            const feature = e.features[0];
+            popup
+              .setLngLat(feature.geometry.coordinates.slice())
+              .setText(feature.properties.name)
+              .addTo(map);
+          });
+          map.on("mouseleave", "locations", () => {
+            map.getCanvas().style.cursor = "";
+            popup.remove();
+          });
+          map.on("click", "locations", (e) => {
+            window.open(e.features[0].properties.url, "_blank", "noopener");
+          });
+        });
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 47,
+    "name": "Eva Brunner",
+    "url": "https://textilerhizome.ch/2_index/47_x",
+    "reason": "embed centre (city-level only, approximate)"
+  },
+  {
+    "id": 50,
+    "name": "Fibershed DACH",
+    "url": "https://textilerhizome.ch/2_index/50_x",
+    "reason": "embed centre (city-level only, approximate)"
+  },
+  {
+    "id": 51,
+    "name": "fiberstorm",
+    "url": "https://textilerhizome.ch/2_index/51_x",
+    "reason": "country-level only, no location"
+  },
+  {
+    "id": 52,
+    "name": "Fiona Carnuccio - FIOSK",
+    "url": "https://textilerhizome.ch/2_index/52_x",
+    "reason": "embed centre (city-level only, approximate)"
+  },
+  {
+    "id": 53,
+    "name": "Florencia Castillo – 9v9",
+    "url": "https://textilerhizome.ch/2_index/53_x",
+    "reason": "embed centre (geocode failed)"
+  },
+  {
+    "id": 60,
+    "name": "Isabelle Mauchle",
+    "url": "https://textilerhizome.ch/2_index/60_x",
+    "reason": "embed centre (city-level only, approximate)"
+  },
+  {
+    "id": 62,
+    "name": "kollektiv min",
+    "url": "https://textilerhizome.ch/2_index/62_x",
+    "reason": "country-level only, no location"
+  },
+  {
+    "id": 63,
+    "name": "LATX Biomaterials",
+    "url": "https://textilerhizome.ch/2_index/63_x",
+    "reason": "country-level only, no location"
+  },
+  {
+    "id": 65,
+    "name": "Loom – Raum für Gewebe und textile Auseinandersetzung",
+    "url": "https://textilerhizome.ch/2_index/65_x",
+    "reason": "embed centre (geocode failed)"
+  },
+  {
+    "id": 70,
+    "name": "Stéphanie Baechler",
+    "url": "https://textilerhizome.ch/2_index/70_x",
+    "reason": "country-level only, no location"
+  }
+]
