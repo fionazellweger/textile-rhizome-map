@@ -2,10 +2,22 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Toner (Protomaps)</title>
+  <title>Textile Rhizome Map</title>
   <link href="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.css" rel="stylesheet" />
   <script src="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.js"></script>
-  <style>html, body, #map { margin: 0; height: 100%; }</style>
+  <style>
+    html, body, #map { margin: 0; height: 100%; }
+    .maplibregl-popup-content {
+      background: none;
+      box-shadow: none;
+      padding: 0;
+      color: #f9f9f9;
+      font: 400 15px/1.3 "Helvetica Neue", Arial, sans-serif;
+      white-space: nowrap;
+      text-shadow: 0 0 3px #ff0000, 0 0 3px #ff0000;
+    }
+    .maplibregl-popup-tip { display: none; }
+  </style>
 </head>
 <body>
   <div id="map"></div>
@@ -27,18 +39,42 @@
         });
 
         map.on("load", () => {
-          map.addSource("locations", { type: "geojson", data: locations });
+          map.addSource("locations", { type: "geojson", data: locations, generateId: true });
+
+          const radius = ["interpolate", ["linear"], ["zoom"], 10, 7, 18, 11];
+          // zoom may only be used at the top level of an interpolate, so the ring has its own stops
+          const ringRadius = ["interpolate", ["linear"], ["zoom"], 10, 7 + 5, 18, 11 + 5];
+          const hovered = ["boolean", ["feature-state", "hover"], false];
+
+          // second ring, only visible on hover
+          map.addLayer({
+            id: "locations-hover",
+            type: "circle",
+            source: "locations",
+            paint: {
+              "circle-radius": ringRadius,
+              "circle-opacity": 0,
+              "circle-stroke-color": "#FF0000",
+              "circle-stroke-width": 2,
+              "circle-stroke-opacity": ["case", hovered, 1, 0]
+            }
+          });
+
+          // main marker: transparent inside, red ring
           map.addLayer({
             id: "locations",
             type: "circle",
             source: "locations",
             paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 8, 5, 16, 9],
-              "circle-color": "#000",
-              "circle-stroke-color": "#fff",
+              "circle-radius": radius,
+              "circle-color": "#FF0000",
+              "circle-opacity": 0.01,
+              "circle-stroke-color": "#FF0000",
               "circle-stroke-width": 2
             }
           });
+
+          let hoveredId = null;
 
           const popup = new maplibregl.Popup({
             closeButton: false,
@@ -49,6 +85,9 @@
           map.on("mouseenter", "locations", (e) => {
             map.getCanvas().style.cursor = "pointer";
             const feature = e.features[0];
+            if (hoveredId !== null) map.setFeatureState({ source: "locations", id: hoveredId }, { hover: false });
+            hoveredId = feature.id;
+            map.setFeatureState({ source: "locations", id: hoveredId }, { hover: true });
             popup
               .setLngLat(feature.geometry.coordinates.slice())
               .setText(feature.properties.name)
@@ -56,6 +95,8 @@
           });
           map.on("mouseleave", "locations", () => {
             map.getCanvas().style.cursor = "";
+            if (hoveredId !== null) map.setFeatureState({ source: "locations", id: hoveredId }, { hover: false });
+            hoveredId = null;
             popup.remove();
           });
           map.on("click", "locations", (e) => {
