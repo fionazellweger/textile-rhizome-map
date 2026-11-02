@@ -400,6 +400,70 @@
         "address": "Swiss Textile Collection",
         "approximate": false
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.533102,
+          47.367858
+        ]
+      },
+      "properties": {
+        "name": "xess+baba",
+        "url": "https://textilerhizome.ch/2_index/74_x",
+        "address": "xess + baba Shop",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.555426,
+          47.354741
+        ]
+      },
+      "properties": {
+        "name": "Sula GmbH",
+        "url": "https://textilerhizome.ch/2_index/76_x",
+        "address": "Swiss Textile Collection",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.412692,
+          46.826236
+        ]
+      },
+      "properties": {
+        "name": "kollektiv vier design studio",
+        "url": "https://textilerhizome.ch/2_index/77_x",
+        "address": "Elsenholzstrasse 1, 3088 Rüeggisberg",
+        "approximate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.510689,
+          47.362895
+        ]
+      },
+      "properties": {
+        "name": "Ascolite AG",
+        "url": "https://textilerhizome.ch/2_index/80_x",
+        "address": "Grubenstrasse 56, 8045 Zürich",
+        "approximate": false
+      }
     }
   ]
 }

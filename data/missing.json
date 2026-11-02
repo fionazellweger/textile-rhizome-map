@@ -58,5 +58,29 @@
     "name": "Stéphanie Baechler",
     "url": "https://textilerhizome.ch/2_index/70_x",
     "reason": "country-level only, no location"
+  },
+  {
+    "id": 75,
+    "name": "Marie Schumann",
+    "url": "https://textilerhizome.ch/2_index/75_x",
+    "reason": "no google maps embed"
+  },
+  {
+    "id": 78,
+    "name": "Dominique Lanz",
+    "url": "https://textilerhizome.ch/2_index/78_x",
+    "reason": "no google maps embed"
+  },
+  {
+    "id": 79,
+    "name": "DELRUBY Contemporary Textiles",
+    "url": "https://textilerhizome.ch/2_index/79_x",
+    "reason": "no google maps embed"
+  },
+  {
+    "id": 81,
+    "name": "Corinne Odermatt",
+    "url": "https://textilerhizome.ch/2_index/81_x",
+    "reason": "no google maps embed"
   }
 ]
